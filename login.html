@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+<link rel="stylesheet" href="./style/login.css">
+</head>
+<body>
+
+<!-- Cookie consent popup - will show after login form submission -->
+<div class="cookie-popup" id="cookiePopup">
+    <div class="cookie-content">
+        <h3>🍪 Cookie Consent</h3>
+        <p>We use cookies to remember your role and preferences for 3 days. Do you agree to use cookies?</p>
+        <div class="cookie-buttons">
+            <button class="cookie-btn accept-btn" onclick="acceptCookies()">Yes, I Agree</button>
+            <button class="cookie-btn reject-btn" onclick="rejectCookies()">No, Thanks</button>
+        </div>
+    </div>
+</div>
+
+<!-- Main login container -->
+<div class="auth-container">
+    <h2>Login to Your Account</h2>
+    <form id="loginForm">
+        <input type="text" id="username" placeholder="Enter username" required>
+        <input type="password" id="password" placeholder="Enter password" required>
+        <select id="roleSelect">
+            <option value="user">Login as User</option>
+            <option value="admin">Login as Admin</option>
+        </select>
+        <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="register.html">Register here</a></p>
+</div>
+
+<script src="./js/login.js"></script>
+</body>
+</html>

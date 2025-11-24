@@ -1,0 +1,86 @@
+
+        :root {
+            --main-light: #e8f0ff;
+            --main-blue: #3b6fdc;
+            --radius: 10px;
+            --transition: 0.3s ease;
+        }
+
+        body {
+            background: var(--main-light);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+       
+        .auth-container {
+            width: 360px;
+            margin: 80px auto;
+            padding: 35px;
+            background: #fff;
+            border-radius: var(--radius);
+            box-shadow: 0 8px 25px #0001;
+        }
+
+    
+        .auth-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--main-blue);
+            font-weight: bold;
+        }
+
+       
+        .auth-container input,
+        .auth-container select {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 12px;
+            border-radius: var(--radius);
+            border: 1px solid #ccc;
+            transition: var(--transition);
+        }
+
+     
+        .auth-container input:focus,
+        .auth-container select:focus {
+            border-color: var(--main-blue);
+            box-shadow: 0 0 8px #3b6fdc55;
+            outline: none;
+        }
+
+      
+        .auth-container button {
+            width: 100%;
+            padding: 12px;
+            background: var(--main-blue);
+            border: none;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+            border-radius: var(--radius);
+            transition: var(--transition);
+            font-weight: bold;
+        }
+
+      
+        .auth-container button:hover {
+            background: #2b5fcf;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px #0003;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        a {
+            color: var(--main-blue);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }

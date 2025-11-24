@@ -1,0 +1,177 @@
+   
+        :root {
+            --main-light: #e8f0ff;
+            --main-blue: #3b6fdc;
+            --blue-dark: #2a59c8;
+            --radius: 12px;
+            --transition: .3s ease;
+        }
+
+       
+        body {
+            background: var(--main-light);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            animation: fadeIn .7s ease;
+        }
+
+       
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+      
+        .nav {
+            padding: 18px;
+            background: linear-gradient(90deg, var(--main-blue), var(--blue-dark));
+            box-shadow: 0 3px 10px #0002;
+            color: #fff;
+            font-weight: bold;
+            font-size: 22px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+      
+        .box {
+            width: 350px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: var(--radius);
+            box-shadow: 0 8px 20px #0002;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+      
+        .box:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 35px #0003;
+        }
+
+      
+        .small-cards {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;  
+        }
+
+      
+        .card {
+            width: 48%;
+            background: var(--main-light);
+            padding: 12px;
+            border-radius: var(--radius);
+            box-shadow: 0 4px 10px #0001;
+            transition: var(--transition);
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            background: #dce7ff;
+            transform: translateY(-2px);
+        }
+
+   
+        .action-btn {
+            margin-top: 20px;
+            padding: 12px;
+            width: 100%;
+            background: var(--main-blue);
+            color: #fff;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            font-size: 16px;
+            transition: var(--transition);
+            font-weight: bold;
+        }
+
+      
+        .action-btn:hover {
+            background: var(--blue-dark);
+            box-shadow: 0 4px 10px #0003;
+        }
+
+    
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--main-blue);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+      
+        .profile-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+     
+        .profile-pic {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--main-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: var(--main-blue);
+            font-size: 30px;
+        }
+        
+        
+        .user-info {
+            text-align: left;
+        }
+        
+     
+        .user-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+     
+        .user-role {
+            color: #666;
+            font-size: 14px;
+        }
+
+    
+        .logout-btn {
+            background: #e74c3c;
+            margin-top: 10px;
+        }
+
+        .logout-btn:hover {
+            background: #c0392b;
+        }
+        .profile-pic {
+    font-size: 40px;             
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #fff;
+    border-radius: 50%;          
+    border: 2px solid #e5e5e5;    
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+    
+    user-select: none;
+}

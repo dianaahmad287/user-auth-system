@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User page</title>
+    <link rel="stylesheet" href="./style/user-home.css">
+
+</head>
+<body>
+
+<!-- Page header -->
+<div class="nav">User page</div>
+
+<!-- Main content -->
+<div class="box">
+    <!-- User profile section -->
+    <div class="profile-section">
+<div class="profile-sticker">
+    <div class="profile-pic">
+        <svg width="70" height="70" viewBox="0 0 24 24" fill="none">
+        
+            <circle cx="12" cy="8" r="5" fill="#444"/>
+            
+     
+            <path d="M4 21
+                     C4 14.5 7.5 12 12 12
+                     C16.5 12 20 14.5 20 21
+                     Z"
+                  fill="#444"
+                  />
+        </svg>
+    </div>
+</div>
+
+        <div class="user-info">
+            <div class="user-name" id="userName">Loading...</div>
+            <div class="user-role">Standard User</div>
+        </div>
+    </div>
+    
+    <h2>Welcome Back!</h2>
+    <p>You are logged in as a standard user</p>
+
+    <!-- First row of cards -->
+    <div class="small-cards">
+        <div class="card">My Profile</div>
+        <div class="card">Account Settings</div>
+    </div>
+    
+    <!-- Second row of cards -->
+    <div class="small-cards">
+        <div class="card">My Activities</div>
+        <div class="card">Notifications</div>
+    </div>
+
+    <!-- Action buttons -->
+    <button class="action-btn">View My Activities</button>
+    <button class="action-btn logout-btn" onclick="logout()">Logout</button>
+</div>
+
+<script src="./js/user-home.js"></script>
+</body>
+</html>

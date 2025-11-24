@@ -1,0 +1,155 @@
+    
+        :root {
+            --main-light: #e8f0ff;
+            --main-blue: #3b6fdc;
+            --text-dark: #333;
+            --radius: 10px;
+            --transition: 0.3s ease;
+        }
+
+   
+        body {
+            background: var(--main-light);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+    
+        .auth-container {
+            width: 350px;
+            margin: 120px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: var(--radius);
+            box-shadow: 0 8px 25px #0001;
+            transition: var(--transition);
+        }
+
+     
+        .auth-container:hover {
+            box-shadow: 0 12px 30px #0002;
+        }
+
+  
+        .auth-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--main-blue);
+            font-weight: bold;
+        }
+
+      
+        .auth-container input,
+        .auth-container select {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 12px;
+            font-size: 15px;
+            border-radius: var(--radius);
+            border: 1px solid #ccc;
+            transition: var(--transition);
+        }
+
+       
+        .auth-container input:focus,
+        .auth-container select:focus {
+            border-color: var(--main-blue);
+            box-shadow: 0 0 8px #3b6fdc55;
+            outline: none;
+        }
+
+        .auth-container button {
+            width: 100%;
+            padding: 12px;
+            background: var(--main-blue);
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: var(--radius);
+            font-weight: bold;
+            transition: var(--transition);
+        }
+
+       
+        .auth-container button:hover {
+            background: #2b5fcf;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px #0003;
+        }
+
+       
+        .auth-container p {
+            text-align: center;
+            margin-top: 18px;
+            font-size: 14px;
+            color: var(--text-dark);
+        }
+
+       
+        .auth-container a {
+            color: var(--main-blue);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .auth-container a:hover {
+            text-decoration: underline;
+        }
+
+       
+        .cookie-popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cookie-content {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .cookie-buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .cookie-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: var(--transition);
+        }
+
+        .accept-btn {
+            background: var(--main-blue);
+            color: white;
+        }
+
+        .accept-btn:hover {
+            background: #2b5fcf;
+        }
+
+        .reject-btn {
+            background: #f1f1f1;
+            color: #333;
+        }
+
+        .reject-btn:hover {
+            background: #ddd;
+        }
