@@ -25,7 +25,7 @@
         
         // If user doesn't have admin role, send them back to login
         if (!userRole || userRole !== "admin") {
-            window.location.href = "login.html";
+            window.location.href = "index.html";
             return;
         }
     };
@@ -39,5 +39,5 @@
         localStorage.removeItem("isLoggedIn");
         
         // Redirect to login page
-        window.location.href = "login.html";
+        window.location.href = "index.html";
     }

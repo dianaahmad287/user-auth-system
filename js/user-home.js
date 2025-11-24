@@ -25,7 +25,7 @@
         
         // If user doesn't have proper role, redirect to login
         if (!userRole || userRole !== "user") {
-            window.location.href = "login.html";
+            window.location.href = "index.html";
             return;
         }
         
@@ -56,5 +56,5 @@
         localStorage.removeItem("isLoggedIn");
         
         // Go back to login page
-        window.location.href = "login.html";
+        window.location.href = "index.html";
     }
